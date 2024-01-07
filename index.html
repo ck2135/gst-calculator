@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <img src="assets/Logo.gif" alt="" />
+      </div>
+      <div class="Items">
+        <a href="">Home</a>
+        <a href="">Menu</a>
+        <a href="">Service</a>
+        <a href="">Contact</a>
+        <a href="">Location</a>
+      </div>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
+
+    <div class="Service">
+      <img src="assets/Menu.png" alt="" />
+    </div>
+    <div class="Details">
+      <h1>Person Details</h1>
+      <form action="" class="box">
+        <div class="form1">
+          <label for="name">Name</label>
+          <input type="text" id="Name" class="name" name="name" />
+        </div>
+        <div class="form1">
+          <label for="name">Phone</label>
+          <input type="text" id="Phone" class="name" name="name" />
+        </div>
+        <div class="form1">
+          <label for="name">Email</label>
+          <input type="text" id="Email" class="name" name="name" />
+        </div>
+        <div class="form1">
+          <label for="name">Place</label>
+          <input type="text" id="Place" class="name" name="name" />
+        </div>
+      </form>
+    </div>
+    <div class="Details">
+      <h1>Menu Items</h1>
+      <form action="" class="box">
+        <div class="form1">
+          <label for="name">Biryani</label>
+          <input type="text" id="Biryani" class="name" name="name" />
+        </div>
+        <div class="form1">
+          <label for="name">Chicken</label>
+          <input type="text" id="Chicken" class="name" name="name" />
+        </div>
+        <div class="form1">
+          <label for="name">Staters</label>
+          <input type="text" id="Staters" class="name" name="name" />
+        </div>
+        <div class="form1">
+          <label for="name">GST %</label>
+          <input type="text" id="GST" class="name" name="name" />
+        </div>
+      </form>
+      <button class="button1" onclick="payment()" type="button">Payment</button>
+      <p id="paymentdetails"></p>
+    </div>
+    <div class="Contact">
+      <form class="contactinfo">
+        <h1>Contact Us</h1>
+        <div class="contactform">
+          <div class="form2">
+            <label for="name">Name</label>
+            <input type="text" id="Name" class="name" name="name" />
+          </div>
+          <div class="form2">
+            <label for="name">Email</label>
+            <input type="text" id="Email" class="name" name="name" />
+          </div>
+          <div class="form2">
+            <label for="name">Phone</label>
+            <input type="text" id="Phone" class="name" name="name" />
+          </div>
+        </div>
+        <button class="button2" type="button">Submit</button>
+      </form>
+    </div>
+
+    <div class="footer">
+        <h1>Payment methods</h1>
+        <hr class="line"/>
+        <div class="payments">
+            <img src="assets/card-payment.png" alt="">
+            <img src="assets/card.png" alt="">
+            <img src="assets/money.png" alt="">
+            <img src="assets/paypal.png" alt="">
+            <img src="assets/visa.png" alt="">
+        </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
