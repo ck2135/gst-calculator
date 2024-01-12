@@ -10,7 +10,6 @@ function payment() {
   let Staters = document.getElementById("Staters").value;
 
 
-  let GST = document.getElementById("GST").value;
 
   let arr1 = [
     parseInt(Biryani),
@@ -20,12 +19,16 @@ function payment() {
   ];
 
   let sum = 0;
-  for (let i = 0; i <= arr1.length - 1; i++) {
-    sum = sum + arr1[i];
+  for (let i = 0; i <= arr1.length; i++) {
+    if (!isNaN(arr1[i])){
+      sum = sum + arr1[i];
+    }
   }
 
-  GST = (sum * GST) / 100;
-  let Total = GST + sum;
+  let GST = document.getElementById("GST").value || 0;
+
+  let GST1 = (sum * GST) / 100;
+  let Total = GST1 + sum;
   let result =
     "Name: " +
     Name +
@@ -42,7 +45,7 @@ function payment() {
     "Total amount: " +
     sum +
     "<br>" +
-    "Total amount with GST 18%: " +
+    `Total amount with GST ${GST}%: ` +
     Math.round(Total);
 
   document.getElementById("paymentdetails").innerHTML = result;

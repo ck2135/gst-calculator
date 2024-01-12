@@ -6,8 +6,7 @@
 }
 
 body {
-    background: rgb(34, 193, 195);
-    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    background-image: linear-gradient(to right, #005aa7, #fffde4);
 }
 
 /* Navbar section */
@@ -63,7 +62,8 @@ a {
 }
 
 .Service img {
-    width: 50%;
+    width: 400px;
+    height: 550px;
 }
 
 /* ---------------------- */
