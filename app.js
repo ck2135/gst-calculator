@@ -14,8 +14,7 @@ function payment() {
   let arr1 = [
     parseInt(Biryani),
     parseInt(Chicken),
-    parseInt(Staters),
-    // parseInt(GST)
+    parseInt(Staters)
   ];
 
   let sum = 0;
